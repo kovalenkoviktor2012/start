@@ -369,11 +369,12 @@ body{
 .contacts{
     background-image: url(../images/contacts-bg.jpg);
     background-repeat: no-repeat;
+    background-position: bottom left;
 }
 
 .contacts-box {
     margin-left: auto;
-    width: 300px;
+    width: 390px;
     background-color: #fff;
     padding: 33px 0 33px 20px;
 }
@@ -384,10 +385,16 @@ body{
     line-height: 24px;
     color: #001E64;
     margin-bottom: 30px;
-    padding-left: 20px;
+    
 
 }
 .contacts__box-list {
+    list-style-type: none;
 }
 .contacts__box-item {
+    margin-top: 30px;
+}
+
+.contacts__box-item span{
+    display: block;
 }

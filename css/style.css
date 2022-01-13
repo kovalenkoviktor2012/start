@@ -160,6 +160,13 @@ body{
     display: inline-block;
     transform: translateY(-100px);
     position: absolute;
+    transition: all .3s;
+}
+
+.header__content-btn:hover{
+    color: rgba(0, 30, 100, 1);
+    background-color: rgba(255, 255, 255, 1);
+
 }
 
 .header__content-box{
@@ -274,6 +281,12 @@ body{
     display: inline-block;
     color: #001E64;
     cursor: pointer;
+    transition: all .3s;
+}
+
+.product__content-btn:hover{
+    background-color: rgba(0, 30, 100, 1);
+    color: rgba(255, 255, 255, 1);
 }
 
 .seafood-box{
@@ -311,8 +324,7 @@ body{
 .seafood {
     padding: 100px 0;
 }
-.container {
-}
+
 .seafood__items {
     margin-bottom: 100px;
 }
@@ -321,9 +333,7 @@ body{
     justify-content: space-between;
     margin-bottom: 50px;
 }
-.seafood__item-content {
 
-}
 
 .seafood__item-title {
     max-width: 490px;
@@ -349,16 +359,13 @@ body{
     margin-right: 180px;
 }
 
-.seafood__item-img {
-}
 
 .seafood__blockquote {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
 }
-.seafood__blockquote-img {
-}
+
 
 .seafood__blockquote-text {
     max-width: 628px;
@@ -384,13 +391,15 @@ body{
     font-size: 18px;
     line-height: 24px;
     color: #001E64;
-    margin-bottom: 30px;
-    
-
+    margin-bottom: 30px;   
 }
+
 .contacts__box-list {
     list-style-type: none;
+    font-size: 18px;
+    line-height: 21px;
 }
+
 .contacts__box-item {
     margin-top: 30px;
 }
@@ -398,3 +407,47 @@ body{
 .contacts__box-item span{
     display: block;
 }
+
+.footer {
+    padding: 25px 0 110px;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 45px 0 23px;
+}
+
+.footer__inner .menu{
+    padding-bottom: 30px;
+}
+
+.footer-social__list{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding-bottom: 19px;
+}
+.footer-social__item + .footer-social__item{
+    margin-left: 10px;
+}
+
+.footer-social__link path{
+    transition: all .3s;
+}
+
+.footer-social__link:hover path{
+    fill: rgba(0, 30, 100, 1);  
+}
+
+@media(max-width: 1000px){
+    .header{
+        background-color: red;
+    }
+    .menu{
+        background-color: blue;
+    }
+}
+
+
